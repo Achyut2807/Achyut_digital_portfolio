@@ -6,7 +6,6 @@
 <title>Project Details | Achyut A. Bhanderi</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
@@ -23,10 +22,9 @@ background-size:30px 30px;
 <body class="bg-black text-white antialiased bg-grid">
 
 <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-xl z-50 border-b border-indigo-900/40">
-
 <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
 
-<a href="index.html" class="text-indigo-400 font-bold flex items-center gap-2 hover:text-indigo-300 transition">
+<a href="index.html" class="text-indigo-400 font-bold hover:text-indigo-300 transition">
 ← Back to Portfolio
 </a>
 
@@ -40,92 +38,138 @@ Technical <span class="text-indigo-400">Project Details</span>
 </h1>
 
 <p class="text-gray-400 max-w-2xl mx-auto italic">
-Detailed engineering implementation and technical workflow
+Detailed engineering implementation and technical workflow of selected projects
 </p>
 
 </header>
 
-<main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+<main class="max-w-5xl mx-auto px-6 py-20 space-y-32">
 
-<section id="fpga" class="grid md:grid-cols-3 gap-12">
+<section id="fpga" class="space-y-8">
 
-<div>
-<img src="https://www.raypcb.com/wp-content/uploads/2022/05/fpga-design-.jpg" class="rounded-xl border border-white/10 shadow-lg">
-<h2 class="text-2xl font-bold text-indigo-400 mt-4">01. FPGA-Based Data Acquisition System</h2>
-<p class="text-sm text-gray-500 mt-2">Oct 2025 – Present</p>
-</div>
+<h2 class="text-3xl font-bold text-indigo-400">
+01. FPGA-Based Data Acquisition System
+</h2>
 
-<div class="md:col-span-2 text-gray-300 leading-relaxed">
+<p class="text-sm text-gray-500">
+Oct 2025 – Present
+</p>
+
+<img src="https://www.raypcb.com/wp-content/uploads/2022/05/fpga-design-.jpg"
+class="w-full rounded-xl border border-white/10 shadow-lg">
+
+<div class="text-gray-300 leading-relaxed space-y-4">
+
+<p>
+This project focuses on developing a deterministic FPGA-based data acquisition framework designed for reliable multi-clock digital signal capture under high-speed operating conditions.
+</p>
+
 <ul class="list-disc ml-5 space-y-3">
-<li>Designed Verilog-based FPGA DAQ architecture.</li>
-<li>Implemented FIFO buffering for reliable data transfer.</li>
-<li>Applied clock-domain crossing methods.</li>
-<li>Performed Vivado timing analysis for setup and hold validation.</li>
+<li>Designed Verilog HDL based acquisition architecture using FIFO buffering.</li>
+<li>Implemented clock-domain crossing for asynchronous data transfer.</li>
+<li>Applied Vivado XDC constraints for setup and hold timing verification.</li>
+<li>Validated deterministic data capture through timing closure analysis.</li>
 </ul>
+
 </div>
 
 </section>
 
 
-<section id="wavelet" class="grid md:grid-cols-3 gap-12">
 
-<div>
-<img src="https://www.unmannedsystemstechnology.com/wp-content/uploads/2020/01/Dedrone-RF-160-Sensor-for-sUAS-Detection.jpg" class="rounded-xl border border-white/10 shadow-lg">
-<h2 class="text-2xl font-bold text-indigo-400 mt-4">02. Wavelet-Based Vital Signs Detection</h2>
-<p class="text-sm text-gray-500 mt-2">Jul 2025 – Nov 2025</p>
-</div>
+<section id="wavelet" class="space-y-8">
 
-<div class="md:col-span-2 text-gray-300 leading-relaxed">
+<h2 class="text-3xl font-bold text-indigo-400">
+02. Wavelet-Based Vital Signs Detection
+</h2>
+
+<p class="text-sm text-gray-500">
+Jul 2025 – Nov 2025
+</p>
+
+<img src="https://www.unmannedsystemstechnology.com/wp-content/uploads/2020/01/Dedrone-RF-160-Sensor-for-sUAS-Detection.jpg"
+class="w-full rounded-xl border border-white/10 shadow-lg">
+
+<div class="text-gray-300 leading-relaxed space-y-4">
+
+<p>
+A MATLAB-based non-contact RF sensing framework developed for extracting respiration and heartbeat signals under cluttered environments for disaster rescue applications.
+</p>
+
 <ul class="list-disc ml-5 space-y-3">
-<li>Built MATLAB RF sensing framework.</li>
-<li>Extracted heartbeat and respiration through multirate wavelet decomposition.</li>
-<li>Handled cluttered low SNCR conditions.</li>
-<li>Improved victim detection using UAV + IRS support.</li>
+<li>Applied multirate wavelet decomposition for signal separation.</li>
+<li>Separated respiration band (0.2–0.5 Hz) and heartbeat band (1–2 Hz).</li>
+<li>Handled low SNCR and clutter effects during detection.</li>
+<li>Integrated UAV and Intelligent Reflecting Surface assisted sensing concept.</li>
 </ul>
+
 </div>
 
 </section>
 
 
-<section id="vehicular" class="grid md:grid-cols-3 gap-12">
 
-<div>
-<img src="https://saferide4kids.com/wp-content/uploads/2015/09/vehicle_safety1.jpg" class="rounded-xl border border-white/10 shadow-lg">
-<h2 class="text-2xl font-bold text-indigo-400 mt-4">03. Smart Vehicular Safety System</h2>
-<p class="text-sm text-gray-500 mt-2">Nov 2025 – Present</p>
-</div>
+<section id="vehicular" class="space-y-8">
 
-<div class="md:col-span-2 text-gray-300 leading-relaxed">
+<h2 class="text-3xl font-bold text-indigo-400">
+03. Smart Vehicular Safety System
+</h2>
+
+<p class="text-sm text-gray-500">
+Nov 2025 – Present
+</p>
+
+<img src="https://saferide4kids.com/wp-content/uploads/2015/09/vehicle_safety1.jpg"
+class="w-full rounded-xl border border-white/10 shadow-lg">
+
+<div class="text-gray-300 leading-relaxed space-y-4">
+
+<p>
+This project develops an intelligent vehicular safety framework using embedded sensing and machine learning for rider behavior monitoring and predictive safety alerts.
+</p>
+
 <ul class="list-disc ml-5 space-y-3">
-<li>Integrated ESP32, BNO055 IMU and GNSS/GSM modules.</li>
-<li>Developed DNN-MLP model for rash driving detection.</li>
-<li>Implemented overspeed and harsh braking alerts.</li>
-<li>Established MQTT cloud telemetry.</li>
+<li>Integrated ESP32 with BNO055 IMU and GNSS/GSM modules.</li>
+<li>Captured acceleration, braking and speed profiles in real time.</li>
+<li>Implemented DNN-MLP based detection for rash driving and harsh braking.</li>
+<li>Used MQTT telemetry for cloud-based logging and long-term rider analysis.</li>
 </ul>
+
 </div>
 
 </section>
 
 
-<section id="wifi" class="grid md:grid-cols-3 gap-12">
 
-<div>
-<img src="https://dropinblog.net/cdn-cgi/image/fit=scale-down,width=700/34258189/files/wireless-router-8schg.jpg" class="rounded-xl border border-white/10 shadow-lg">
-<h2 class="text-2xl font-bold text-indigo-400 mt-4">04. Wi-Fi Campus Network Design</h2>
-<p class="text-sm text-gray-500 mt-2">Feb 2025 – Jun 2025</p>
-</div>
+<section id="wifi" class="space-y-8">
 
-<div class="md:col-span-2 text-gray-300 leading-relaxed">
+<h2 class="text-3xl font-bold text-indigo-400">
+04. Wi-Fi Campus Network Design
+</h2>
+
+<p class="text-sm text-gray-500">
+Feb 2025 – Jun 2025
+</p>
+
+<img src="https://dropinblog.net/cdn-cgi/image/fit=scale-down,width=700/34258189/files/wireless-router-8schg.jpg"
+class="w-full rounded-xl border border-white/10 shadow-lg">
+
+<div class="text-gray-300 leading-relaxed space-y-4">
+
+<p>
+Designed a large-scale smart campus wireless network architecture supporting high-density user environments and multiple simultaneous devices.
+</p>
+
 <ul class="list-disc ml-5 space-y-3">
-<li>Designed Wi-Fi 5/6 network supporting 4000+ devices.</li>
-<li>Evaluated throughput, latency and fairness in MATLAB.</li>
-<li>Applied OFDM, MIMO and VLAN segmentation.</li>
-<li>Designed secure wireless architecture.</li>
+<li>Designed Wi-Fi 5/6 network for 1000+ students and 4000+ devices.</li>
+<li>Analyzed throughput, latency, fairness and utilization using MATLAB.</li>
+<li>Applied OFDM and MU-MIMO based spatial multiplexing concepts.</li>
+<li>Implemented VLAN segmentation and secure wireless access design.</li>
 </ul>
+
 </div>
 
 </section>
-
 
 </main>
 
