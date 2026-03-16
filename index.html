@@ -1,153 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Achyut A. Bhanderi | Digital Portfolio</title>
+<title>Achyut A. Bhanderi | Engineering Portfolio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #f4f6f9;
-        color: #333;
-    }
-
-    header {
-        background: #0d1b2a;
-        color: white;
-        padding: 40px 20px;
-        text-align: center;
-    }
-
-    header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-    }
-
-    header p {
-        margin-top: 10px;
-        font-size: 1.1rem;
-    }
-
-    section {
-        max-width: 1000px;
-        margin: auto;
-        padding: 30px 20px;
-    }
-
-    .card {
-        background: white;
-        padding: 25px;
-        margin-bottom: 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-
-    h2 {
-        color: #0d1b2a;
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 8px;
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    footer {
-        background: #0d1b2a;
-        color: white;
-        text-align: center;
-        padding: 20px;
-    }
-
-    a {
-        color: #1d4ed8;
-        text-decoration: none;
-    }
-
-    .skills span {
-        display: inline-block;
-        background: #e0ecff;
-        padding: 8px 12px;
-        margin: 5px;
-        border-radius: 8px;
-    }
+body {
+font-family:'Inter',sans-serif;
+}
+.bg-grid {
+background-image: radial-gradient(circle at 2px 2px, rgba(99,102,241,0.1) 1px, transparent 0);
+background-size:30px 30px;
+}
+.project-card:hover img {
+transform:scale(1.05);
+transition:all 0.5s ease;
+}
+.footer-icon{
+width:40px;
+height:40px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:10px;
+background:#18181b;
+border:1px solid #27272a;
+color:#818cf8;
+}
 </style>
+
 </head>
-<body>
 
-<header>
-    <h1>Achyut A. Bhanderi</h1>
-    <p>Electronics and Communication Engineering Student | Technical Portfolio</p>
-</header>
+<body class="bg-black text-white antialiased bg-grid">
 
-<section>
+<nav class="fixed top-0 w-full bg-black/90 backdrop-blur-xl z-50 border-b border-indigo-900/40">
+<div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
 
-<div class="card">
-    <h2>About Me</h2>
-    <p>
-        I am an Electronics and Communication Engineering student at Pandit Deendayal Energy University with strong interest in wireless communication, FPGA systems, IoT applications, and embedded technologies.
-    </p>
+<h1 class="text-2xl font-black text-indigo-400 tracking-tighter">AB</h1>
+
+<div class="flex items-center gap-6 text-xs font-bold tracking-widest uppercase">
+<a href="#about" class="hover:text-indigo-400 transition">About</a>
+<a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+<a href="#research" class="hover:text-indigo-400 transition">Research</a>
+<a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
 </div>
 
-<div class="card">
-    <h2>Academic Credentials</h2>
-    <ul>
-        <li>B.Tech in Electronics and Communication Engineering</li>
-        <li>Minor in Internet of Things (IoT)</li>
-        <li>Current CGPA: 8.5</li>
-    </ul>
 </div>
+</nav>
 
-<div class="card">
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <span>MATLAB</span>
-        <span>LTspice</span>
-        <span>TINA-TI</span>
-        <span>SolidWorks</span>
-        <span>Arduino IDE</span>
-        <span>FPGA</span>
-        <span>Python</span>
-        <span>C Programming</span>
-    </div>
-</div>
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-black via-slate-950 to-indigo-950/20">
 
-<div class="card">
-    <h2>Projects</h2>
-    <ul>
-        <li>Wi-Fi Network Design for University Campus</li>
-        <li>IRS-Assisted UAV-Based Wideband Detection System</li>
-        <li>5G NTN Disaster Communication Framework</li>
-        <li>FPGA-Based Digital Hardware Projects</li>
-    </ul>
-</div>
+<h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tight">
+Achyut A. <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">Bhanderi</span>
+</h1>
 
-<div class="card">
-    <h2>Certifications</h2>
-    <ul>
-        <li>IIT Madras Data Science Foundation Level Cleared</li>
-    </ul>
-</div>
+<p class="text-xl md:text-2xl max-w-3xl text-gray-400 font-light leading-relaxed">
+Electronics & Communication Engineer | Wireless Systems | FPGA | IoT
+</p>
 
-<div class="card">
-    <h2>Social Contribution</h2>
-    <p>
-        Associated with Happy Faces organization supporting children's education, confidence development, and moral learning.
-    </p>
-</div>
-
-<div class="card">
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>LinkedIn: Add your profile link</p>
+<div class="flex flex-wrap justify-center gap-4 mt-10">
+<a href="#projects" class="px-8 py-3 bg-indigo-600 font-bold rounded-lg hover:bg-indigo-500 transition-all">Explore Projects</a>
 </div>
 
 </section>
 
-<footer>
-    © 2026 Achyut A. Bhanderi | Digital Portfolio
+<section id="about" class="py-24 px-6 max-w-6xl mx-auto border-t border-indigo-900/20">
+
+<div class="grid md:grid-cols-2 gap-16 items-center">
+
+<div>
+<h2 class="text-3xl font-bold text-indigo-400 mb-6">About Me</h2>
+
+<p class="text-gray-300 text-lg leading-relaxed mb-6">
+Electronics and Communication Engineering student at Pandit Deendayal Energy University with current CGPA of 8.5 and strong interest in communication systems, FPGA design, embedded platforms and intelligent sensing.
+</p>
+
+<p class="text-gray-400 mb-6">
+Skilled in MATLAB, LTspice, TINA-TI, SolidWorks, Arduino IDE, FPGA implementation and wireless system simulation.
+</p>
+
+<p class="text-gray-500 italic border-l-2 border-indigo-500 pl-4">
+Focused on solving practical engineering problems through integrated hardware and communication technologies.
+</p>
+
+</div>
+
+<div>
+<img src="https://www.raypcb.com/wp-content/uploads/2022/05/fpga-design-.jpg" class="rounded-2xl border border-indigo-500/20 shadow-2xl">
+</div>
+
+</div>
+
+</section>
+
+<section id="projects" class="py-24 px-6 bg-slate-950/30">
+
+<div class="max-w-6xl mx-auto">
+
+<h2 class="text-4xl font-bold mb-16 text-center">
+Engineering <span class="text-indigo-400">Portfolio</span>
+</h2>
+
+<div class="space-y-20">
+
+<div class="grid md:grid-cols-2 gap-12 items-center project-card">
+<div class="overflow-hidden rounded-xl border border-white/10 shadow-xl">
+<img src="https://dropinblog.net/cdn-cgi/image/fit=scale-down,width=700/34258189/files/wireless-router-8schg.jpg" class="w-full grayscale hover:grayscale-0 transition duration-700">
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-4 text-indigo-300">Wi-Fi Smart Campus Network</h3>
+<ul class="list-disc ml-5 text-gray-400 space-y-2">
+<li>Designed smart campus Wi-Fi for 4000+ devices</li>
+<li>Implemented MU-MIMO analysis</li>
+<li>Evaluated throughput, fairness and latency</li>
+</ul>
+</div>
+</div>
+
+<div class="grid md:grid-cols-2 gap-12 items-center project-card">
+<div class="md:order-2 overflow-hidden rounded-xl border border-white/10 shadow-xl">
+<img src="https://www.unmannedsystemstechnology.com/wp-content/uploads/2020/01/Dedrone-RF-160-Sensor-for-sUAS-Detection.jpg" class="w-full grayscale hover:grayscale-0 transition duration-700">
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-4 text-indigo-300">IRS Assisted RF Sensing</h3>
+<ul class="list-disc ml-5 text-gray-400 space-y-2">
+<li>Wideband detection using UAV-assisted IRS</li>
+<li>Vital sign extraction through RF sensing</li>
+<li>Wavelet-based heartbeat detection</li>
+</ul>
+</div>
+</div>
+
+<div class="grid md:grid-cols-2 gap-12 items-center project-card">
+<div class="overflow-hidden rounded-xl border border-white/10 shadow-xl">
+<img src="https://d35xcwcl37xo08.cloudfront.net/current-affairs-wp-uploads/2025/04/risc_v_technology.png" class="w-full grayscale hover:grayscale-0 transition duration-700">
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-4 text-indigo-300">FPGA Digital Systems</h3>
+<ul class="list-disc ml-5 text-gray-400 space-y-2">
+<li>Implemented digital logic on FPGA</li>
+<li>Timing-aware hardware design</li>
+<li>High-speed digital architecture exploration</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="research" class="py-24 px-6 border-t border-indigo-900/20">
+
+<div class="max-w-4xl mx-auto">
+
+<h2 class="text-3xl font-bold mb-12 text-center text-indigo-400 uppercase">Research Interests</h2>
+
+<div class="space-y-8">
+
+<div class="p-6 bg-white/5 rounded-xl border border-white/10">
+<h3 class="text-xl font-bold text-gray-100">Wireless Communication Systems</h3>
+</div>
+
+<div class="p-6 bg-white/5 rounded-xl border border-white/10">
+<h3 class="text-xl font-bold text-gray-100">FPGA & Embedded Hardware</h3>
+</div>
+
+<div class="p-6 bg-white/5 rounded-xl border border-white/10">
+<h3 class="text-xl font-bold text-gray-100">IoT Based Intelligent Systems</h3>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer id="contact" class="bg-zinc-950 pt-20 pb-10 border-t border-zinc-900">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<div class="flex gap-6">
+
+<a href="https://github.com/achyut2807" target="_blank" class="footer-icon">
+<i class="fa-brands fa-github"></i>
+</a>
+
+<a href="mailto:your-email@example.com" class="footer-icon">
+<i class="fa-solid fa-envelope"></i>
+</a>
+
+</div>
+
+<div class="mt-10 text-zinc-500 text-sm">
+© 2026 Achyut A. Bhanderi
+</div>
+
+</div>
+
 </footer>
 
 </body>
