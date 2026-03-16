@@ -12,14 +12,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <style>
-body {
+body{
 font-family:'Inter',sans-serif;
 }
-.bg-grid {
+.bg-grid{
 background-image: radial-gradient(circle at 2px 2px, rgba(99,102,241,0.1) 1px, transparent 0);
 background-size:30px 30px;
 }
-.project-card:hover img {
+.project-card:hover img{
 transform:scale(1.05);
 transition:all 0.5s ease;
 }
@@ -41,6 +41,7 @@ color:#818cf8;
 <body class="bg-black text-white antialiased bg-grid">
 
 <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-xl z-50 border-b border-indigo-900/40">
+
 <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
 
 <h1 class="text-2xl font-black text-indigo-400 tracking-tighter">AB</h1>
@@ -48,11 +49,12 @@ color:#818cf8;
 <div class="flex items-center gap-6 text-xs font-bold tracking-widest uppercase">
 <a href="#about" class="hover:text-indigo-400 transition">About</a>
 <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
-<a href="#research" class="hover:text-indigo-400 transition">Research</a>
+<a href="#publications" class="hover:text-indigo-400 transition">Research</a>
 <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
 </div>
 
 </div>
+
 </nav>
 
 <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-b from-black via-slate-950 to-indigo-950/20">
@@ -66,7 +68,8 @@ Electronics & Communication Engineer | Wireless Systems | FPGA | IoT
 </p>
 
 <div class="flex flex-wrap justify-center gap-4 mt-10">
-<a href="#projects" class="px-8 py-3 bg-indigo-600 font-bold rounded-lg hover:bg-indigo-500 transition-all">Explore Projects</a>
+<a href="#projects" class="px-8 py-3 bg-indigo-600 font-bold rounded-lg hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-500/20">Explore Projects</a>
+<a href="project-details.html" class="px-8 py-3 border border-indigo-500 text-indigo-400 font-bold rounded-lg hover:bg-indigo-500/10 transition-all">Project Details</a>
 </div>
 
 </section>
@@ -76,18 +79,19 @@ Electronics & Communication Engineer | Wireless Systems | FPGA | IoT
 <div class="grid md:grid-cols-2 gap-16 items-center">
 
 <div>
+
 <h2 class="text-3xl font-bold text-indigo-400 mb-6">About Me</h2>
 
 <p class="text-gray-300 text-lg leading-relaxed mb-6">
-Electronics and Communication Engineering student at Pandit Deendayal Energy University with current CGPA of 8.5 and strong interest in communication systems, FPGA design, embedded platforms and intelligent sensing.
+Electronics and Communication Engineering student at Pandit Deendayal Energy University with CGPA 8.64 and strong interest in wireless communication systems, FPGA implementation, embedded platforms and intelligent sensing technologies.
 </p>
 
 <p class="text-gray-400 mb-6">
-Skilled in MATLAB, LTspice, TINA-TI, SolidWorks, Arduino IDE, FPGA implementation and wireless system simulation.
+Skilled in MATLAB, Python, C/C++, Verilog HDL, Vivado, LTspice, TINA-TI, Arduino IDE and Linux-based technical workflows.
 </p>
 
 <p class="text-gray-500 italic border-l-2 border-indigo-500 pl-4">
-Focused on solving practical engineering problems through integrated hardware and communication technologies.
+Focused on practical engineering systems combining hardware design, wireless communication and intelligent signal analysis.
 </p>
 
 </div>
@@ -108,19 +112,20 @@ Focused on solving practical engineering problems through integrated hardware an
 Engineering <span class="text-indigo-400">Portfolio</span>
 </h2>
 
-<div class="space-y-20">
+<div class="space-y-24">
 
 <div class="grid md:grid-cols-2 gap-12 items-center project-card">
 <div class="overflow-hidden rounded-xl border border-white/10 shadow-xl">
-<img src="https://dropinblog.net/cdn-cgi/image/fit=scale-down,width=700/34258189/files/wireless-router-8schg.jpg" class="w-full grayscale hover:grayscale-0 transition duration-700">
+<img src="https://www.raypcb.com/wp-content/uploads/2022/05/fpga-design-.jpg" class="w-full grayscale hover:grayscale-0 transition duration-700">
 </div>
 <div>
-<h3 class="text-2xl font-bold mb-4 text-indigo-300">Wi-Fi Smart Campus Network</h3>
-<ul class="list-disc ml-5 text-gray-400 space-y-2">
-<li>Designed smart campus Wi-Fi for 4000+ devices</li>
-<li>Implemented MU-MIMO analysis</li>
-<li>Evaluated throughput, fairness and latency</li>
+<h3 class="text-2xl font-bold mb-4 text-indigo-300">FPGA-Based Data Acquisition System</h3>
+<ul class="list-disc ml-5 text-gray-400 space-y-2 mb-6">
+<li>FIFO buffering and CDC design</li>
+<li>Vivado timing verification</li>
+<li>Deterministic low-latency data capture</li>
 </ul>
+<a href="project-details.html" class="inline-flex items-center px-6 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-bold hover:bg-indigo-600 transition">View Project</a>
 </div>
 </div>
 
@@ -129,26 +134,58 @@ Engineering <span class="text-indigo-400">Portfolio</span>
 <img src="https://www.unmannedsystemstechnology.com/wp-content/uploads/2020/01/Dedrone-RF-160-Sensor-for-sUAS-Detection.jpg" class="w-full grayscale hover:grayscale-0 transition duration-700">
 </div>
 <div>
-<h3 class="text-2xl font-bold mb-4 text-indigo-300">IRS Assisted RF Sensing</h3>
-<ul class="list-disc ml-5 text-gray-400 space-y-2">
-<li>Wideband detection using UAV-assisted IRS</li>
-<li>Vital sign extraction through RF sensing</li>
-<li>Wavelet-based heartbeat detection</li>
+<h3 class="text-2xl font-bold mb-4 text-indigo-300">Wavelet-Based Vital Signs Detection</h3>
+<ul class="list-disc ml-5 text-gray-400 space-y-2 mb-6">
+<li>MATLAB RF sensing framework</li>
+<li>Heartbeat and respiration extraction</li>
+<li>IRS-assisted disaster sensing</li>
 </ul>
+<a href="project-details.html" class="inline-flex items-center px-6 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-bold hover:bg-indigo-600 transition">View Project</a>
 </div>
 </div>
 
 <div class="grid md:grid-cols-2 gap-12 items-center project-card">
 <div class="overflow-hidden rounded-xl border border-white/10 shadow-xl">
-<img src="https://d35xcwcl37xo08.cloudfront.net/current-affairs-wp-uploads/2025/04/risc_v_technology.png" class="w-full grayscale hover:grayscale-0 transition duration-700">
+<img src="https://saferide4kids.com/wp-content/uploads/2015/09/vehicle_safety1.jpg" class="w-full grayscale hover:grayscale-0 transition duration-700">
 </div>
 <div>
-<h3 class="text-2xl font-bold mb-4 text-indigo-300">FPGA Digital Systems</h3>
-<ul class="list-disc ml-5 text-gray-400 space-y-2">
-<li>Implemented digital logic on FPGA</li>
-<li>Timing-aware hardware design</li>
-<li>High-speed digital architecture exploration</li>
+<h3 class="text-2xl font-bold mb-4 text-indigo-300">Smart Vehicular Safety System</h3>
+<ul class="list-disc ml-5 text-gray-400 space-y-2 mb-6">
+<li>ESP32 + IMU integration</li>
+<li>DNN-MLP rider analysis</li>
+<li>MQTT telemetry</li>
 </ul>
+<a href="project-details.html" class="inline-flex items-center px-6 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-bold hover:bg-indigo-600 transition">View Project</a>
+</div>
+</div>
+
+<div class="grid md:grid-cols-2 gap-12 items-center project-card">
+<div class="md:order-2 overflow-hidden rounded-xl border border-white/10 shadow-xl">
+<img src="https://dropinblog.net/cdn-cgi/image/fit=scale-down,width=700/34258189/files/wireless-router-8schg.jpg" class="w-full grayscale hover:grayscale-0 transition duration-700">
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-4 text-indigo-300">Wi-Fi Campus Network Design</h3>
+<ul class="list-disc ml-5 text-gray-400 space-y-2 mb-6">
+<li>Wi-Fi 5/6 smart campus design</li>
+<li>Throughput and fairness analysis</li>
+<li>OFDM + MIMO implementation</li>
+</ul>
+<a href="project-details.html" class="inline-flex items-center px-6 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-bold hover:bg-indigo-600 transition">View Project</a>
+</div>
+</div>
+
+<div class="grid md:grid-cols-2 gap-12 items-center project-card">
+<div class="overflow-hidden rounded-xl border border-white/10 shadow-xl">
+<img src="https://cdn.sparkfun.com/assets/parts/1/1/8/2/3/14665-ESP32_Thing_Plus_-_01.jpg" class="w-full grayscale hover:grayscale-0 transition duration-700">
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-4 text-indigo-300">IoT Smart Door Bell & Alert System</h3>
+<ul class="list-disc ml-5 text-gray-400 space-y-2 mb-6">
+<li>ESP32 based communication</li>
+<li>Telegram bot alerts</li>
+<li>Fault tolerant messaging</li>
+</ul>
+<a href="project-details.html" class="inline-flex items-center px-6 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-bold hover:bg-indigo-600 transition">View Project</a>
 </div>
 </div>
 
@@ -158,24 +195,50 @@ Engineering <span class="text-indigo-400">Portfolio</span>
 
 </section>
 
-<section id="research" class="py-24 px-6 border-t border-indigo-900/20">
+<section id="publications" class="py-24 px-6 border-t border-indigo-900/20">
 
 <div class="max-w-4xl mx-auto">
 
-<h2 class="text-3xl font-bold mb-12 text-center text-indigo-400 uppercase">Research Interests</h2>
+<h2 class="text-3xl font-bold mb-12 text-center text-indigo-400 uppercase">Publications</h2>
 
 <div class="space-y-8">
 
 <div class="p-6 bg-white/5 rounded-xl border border-white/10">
-<h3 class="text-xl font-bold text-gray-100">Wireless Communication Systems</h3>
+<h3 class="text-xl font-bold">IEEE INDICON 2025 — Accepted</h3>
 </div>
 
 <div class="p-6 bg-white/5 rounded-xl border border-white/10">
-<h3 class="text-xl font-bold text-gray-100">FPGA & Embedded Hardware</h3>
+<h3 class="text-xl font-bold">IEEE WCNC 2026 — Under Review</h3>
 </div>
 
 <div class="p-6 bg-white/5 rounded-xl border border-white/10">
-<h3 class="text-xl font-bold text-gray-100">IoT Based Intelligent Systems</h3>
+<h3 class="text-xl font-bold">IEEE IoT Journal — Under Review</h3>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="py-24 px-6 bg-slate-950/20 border-t border-indigo-900/20">
+
+<div class="max-w-6xl mx-auto">
+
+<h2 class="text-3xl font-bold mb-12 text-center">Achievements & Awards</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="p-6 bg-white/5 rounded-xl border border-white/5">
+<h3 class="font-bold text-indigo-400 mb-2">Winner – IEEE WAMS 2025</h3>
+</div>
+
+<div class="p-6 bg-white/5 rounded-xl border border-white/5">
+<h3 class="font-bold text-indigo-400 mb-2">Samsung ISWDP Fellow</h3>
+</div>
+
+<div class="p-6 bg-white/5 rounded-xl border border-white/5">
+<h3 class="font-bold text-indigo-400 mb-2">Honorary Mention – IEEE ComSoc 2025</h3>
 </div>
 
 </div>
@@ -188,21 +251,21 @@ Engineering <span class="text-indigo-400">Portfolio</span>
 
 <div class="max-w-6xl mx-auto px-6">
 
-<div class="flex gap-6">
+<div class="flex gap-6 mb-8">
 
 <a href="https://github.com/achyut2807" target="_blank" class="footer-icon">
 <i class="fa-brands fa-github"></i>
 </a>
 
-<a href="mailto:your-email@example.com" class="footer-icon">
+<a href="mailto:achyutbhanderi28@gmail.com" class="footer-icon">
 <i class="fa-solid fa-envelope"></i>
 </a>
 
 </div>
 
-<div class="mt-10 text-zinc-500 text-sm">
+<p class="text-zinc-500 text-sm">
 © 2026 Achyut A. Bhanderi
-</div>
+</p>
 
 </div>
 
